@@ -1649,6 +1649,7 @@ div.tabs .last {
 }
 div.tabs .logo {
   height: 5.5rem;
+  vertical-align: middle;
 }
 div.tabs .navmenu, div.tabs .navmenu1 {
   gap: 0;
