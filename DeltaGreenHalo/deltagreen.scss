@@ -294,7 +294,7 @@
     div.tabs {
         grid-template-columns: 8rem 1fr 2rem;
         margin-bottom: 0.5%;
-        @include back-color($maincolor);
+        background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
 
         label > input {
             width: 100%;
