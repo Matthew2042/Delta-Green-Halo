@@ -14,6 +14,7 @@
 	.repcontrol,
 	.itemcontrol{
 		.btn {
+			background: $maincolor !important;
 			position: relative;
 			color      : transparent !important;
 			float      : unset;
@@ -54,6 +55,7 @@
 		.repcontrol_add {
 			border: 0.01rem solid $accent1;
 			border-radius: 0.25rem;
+			background: $maincolor !important;
 			height: 2rem;
 			width: 3rem;
 		}
@@ -79,7 +81,7 @@
 		.repcontrol_add:hover,
 		.repcontrol_edit:focus,
 		.repcontrol_add:focus {
-			background: $accent3;
+			background: $accent3 !important;
 		}
 
 		.repcontrol_edit:hover:after,
@@ -97,6 +99,7 @@
 		
 		.repcontrol_del,
 		.repcontrol_move {
+			background: $maincolor !important;
 			font-size : 1rem;
 			height    : 2rem;
 			padding   : 0px;
@@ -114,7 +117,7 @@
 		}
 
 		.repcontrol_del {
-			background-color: darkred;
+			background-color: darkred !important;
 		}
 	}
 

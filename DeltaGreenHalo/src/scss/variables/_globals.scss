@@ -20,7 +20,8 @@
         //border-radius: 2px; // Add a slight border radius
         //padding: 10px;    padding: 10px;
         //margin: 30px 20px; // Add more space at the top and bottom
-        background: linear-gradient(to bottom right, #fefefe, #e7e7e7); // Add a linear gradient background
+        background: linear-gradient(to bottom right, #3a3a3a, #2a2a2a);
+        color: $dark-font;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 3px 7px rgba(0, 0, 0, 0.15); // Add a larger box shadow
     
         display: grid;
@@ -78,7 +79,8 @@
 
             &[type='roll'],&[type='action'] {
                 //background: $palecolor;
-                background: linear-gradient(to bottom right, $palecolor, $accent1);
+                background: linear-gradient(to bottom right, $maincolor, #4d78a8);
+                color: $dark-font;
                     
                 &:focus, &:hover, &:active {
                     //background-color: $accent3;
@@ -98,10 +100,12 @@
         }
 
         h1 {
+            color: $dark-font;
             text-transform: uppercase;
         }
 
         h2 {
+            color: $dark-font;
             font-size: 0.8rem;
             line-height: 2rem;
             text-transform: uppercase;
@@ -113,6 +117,7 @@
         }
 
         h3 {
+            color: $dark-font;
             font-size: 1.2rem;
             line-height: 2.5rem;
             text-transform: capitalize;
@@ -124,28 +129,30 @@
                 background   : transparent;
                 border       : none;
                 border-radius: 0rem;
-                color        : $maincolor;
+                color        : $dark-font;
                 height       : 2.1rem;
                 text-align   : center;
 
                 &:placeholder-shown {
-                    background: $accent2;
+                    background: #404040;
                 }
             }
         }
 
         label {
+            color: $dark-font;
             margin-bottom: 0px;
             padding-right: 0px;
         }
 
         span {
+            color: $dark-font;
             word-break: break-word;
         }
 
         textarea {
             background    : transparent;
-            color         : $maincolor;
+            color         : $dark-font;
             font-size     : 1rem;
             font-weight   : normal;
             height        : 50px;
