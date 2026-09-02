@@ -3287,7 +3287,7 @@ span.switch-b, input.switchblock:checked ~ span.switch-a {
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-superheader + .sheet-template-header, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-superheader + .sheet-template-header,
 .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-superheader + .sheet-template-header, .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-superheader + .sheet-template-header,
 .sheet-rolltemplate-fancy-ritualloss .sheet-template-container .sheet-template-superheader + .sheet-template-header {
-  background: linear-gradient(to bottom, #4d4d4d 10%, black);
+  background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
 }
 .sheet-rolltemplate-fancy-damages .sheet-template-container .sheet-template-bottom, .sheet-rolltemplate-fancy-sanloss .sheet-template-container .sheet-template-bottom,
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-bottom, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-bottom,
@@ -3324,7 +3324,7 @@ span.switch-b, input.switchblock:checked ~ span.switch-a {
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-header, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-header,
 .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-header, .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-header,
 .sheet-rolltemplate-fancy-ritualloss .sheet-template-container .sheet-template-header {
-  background-color: black;
+  background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
   border-bottom: 2px solid #4d4d4d;
   padding: 2%;
   text-transform: capitalize;
@@ -3431,7 +3431,7 @@ span.switch-b, input.switchblock:checked ~ span.switch-a {
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-subheader, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-subheader,
 .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-subheader, .sheet-rolltemplate-fancy-rituals .sheet-template-container .sheet-template-subheader,
 .sheet-rolltemplate-fancy-ritualloss .sheet-template-container .sheet-template-subheader {
-  background: linear-gradient(to bottom, #4d4d4d 10%, black);
+  background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
 }
 .sheet-rolltemplate-fancy-damages .sheet-template-container .sheet-template-subheader h2, .sheet-rolltemplate-fancy-sanloss .sheet-template-container .sheet-template-subheader h2,
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-subheader h2, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-subheader h2,
@@ -3558,7 +3558,7 @@ span.switch-b, input.switchblock:checked ~ span.switch-a {
 .sheet-rolltemplate-fancy-ritualloss .sheet-template-container .sheet-template-outcome {
   font-weight: bold;
   font-size: 1.8em;
-  color: #f5f5f5;
+  color: #000000;
   font-style: capitalize;
 }
 .sheet-rolltemplate-fancy-damages .sheet-template-container .sheet-template-body-description, .sheet-rolltemplate-fancy-sanloss .sheet-template-container .sheet-template-body-description,

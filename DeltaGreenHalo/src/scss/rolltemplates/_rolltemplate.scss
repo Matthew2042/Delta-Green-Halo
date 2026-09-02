@@ -149,7 +149,7 @@
             overflow: hidden; // Add this line
             
             .sheet-template-superheader + .sheet-template-header {
-                background: linear-gradient(to bottom, $gray 10%, $maincolor);
+                background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
             }
 
             .sheet-template-bottom {
@@ -175,7 +175,7 @@
             }
            
             .sheet-template-header {
-                background-color: $maincolor;
+                background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
                 border-bottom: 2px solid $gray   ;
                 padding: 2%;
                 text-transform: capitalize;
@@ -243,7 +243,7 @@
             }
 
             .sheet-template-subheader{
-                background: linear-gradient(to bottom, $gray 10%, $maincolor);
+                background: linear-gradient(to bottom, #3a3a3a 0%, #000000 100%);
                 h2{
                     color: $namecolor;
                     font-size: 1.2em;
