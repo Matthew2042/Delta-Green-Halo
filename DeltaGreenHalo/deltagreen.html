@@ -186,7 +186,7 @@ each val,key in defensiveQualities
     </div>
     <div class="grid navmenu">
       <input class="onsettings" name="attr_mysettings" type="hidden"/>
-      <input class="type" name="attr_sheet_type" type="hidden"/><a class="pc nosettings" href="#personal-data-pc" data-i18n="personal data">Personal Data </a><a class="pc nosettings" href="#statistical-data-pc" data-i18n="statistical data">Statistical Data</a><a class="pc nosettings" href="#psychological-data-pc" data-i18n="psychological data">Psychological Data</a><a class="pc nosettings" href="#applicable-skills-pc" data-i18n="applicable skill sets">Applicable Skill sets</a><a class="pc nosettings" href="#injuries-pc" data-i18n="injuries">Injuries</a><a class="pc nosettings" href="#equipment-pc" data-i18n="equipment">Equipment</a><a class="pc nosettings" href="#remarks-pc" data-i18n="remarks">Remarks</a><a class="npc nosettings" href="#personal-data-npc" data-i18n="personal data">Personal Data </a><a class="npc nosettings" href="#source-information-npc" data-i18n="source of information">source of information</a><a class="npc nosettings" href="#statistical-data-npc" data-i18n="statistical data">Statistical Data</a><a class="npc nosettings" href="#applicable-skills-npc" data-i18n="applicable skill sets">Applicable Skill sets</a><a class="npc nosettings" href="#equipment-npc" data-i18n="equipment">equipment</a><a class="npc nosettings" href="#abilities-npc" data-i18n="abilities">abilities</a><a class="npc nosettings" href="#remarks-npc" data-i18n="remarks">Remarks</a><a class="navsettings" href="#general-settings" data-i18n="general">general 			</a><a class="navsettings" href="#modifier-settings" data-i18n="modifier">modifier 			</a><a class="navsettings" href="#automations-settings" data-i18n="automations">automations 			</a><a class="navsettings" href="#experimental-settings" data-i18n="experimental">experimental 			</a>
+      <input class="type" name="attr_sheet_type" type="hidden"/><a class="pc nosettings" href="#personal-data-pc" data-i18n="personal data">Personal Data </a><a class="pc nosettings" href="#statistical-data-pc" data-i18n="statistical data">Statistical Data</a><a class="pc nosettings" href="#psychological-data-pc" data-i18n="psychological data">Psychological Data</a><a class="pc nosettings" href="#applicable-skills-pc" data-i18n="applicable skill sets">Applicable Skill sets</a><a class="pc nosettings" href="#injuries-pc" data-i18n="injuries">Injuries</a><a class="pc nosettings" href="#equipment-pc" data-i18n="equipment">Equipment</a><a class="pc nosettings" href="#remarks-pc" data-i18n="remarks">Remarks</a><a class="covenant nosettings" href="#personal-data-covenant" data-i18n="personal data">Personal Data</a><a class="covenant nosettings" href="#statistical-data-covenant" data-i18n="statistical data">Statistical Data</a><a class="covenant nosettings" href="#psychological-data-covenant" data-i18n="psychological data">Psychological Data</a><a class="covenant nosettings" href="#applicable-skills-covenant" data-i18n="applicable skill sets">Applicable Skill sets</a><a class="covenant nosettings" href="#injuries-covenant" data-i18n="injuries">Injuries</a><a class="covenant nosettings" href="#equipment-covenant" data-i18n="equipment">Equipment</a><a class="covenant nosettings" href="#remarks-covenant" data-i18n="remarks">Remarks</a><a class="npc nosettings" href="#personal-data-npc" data-i18n="personal data">Personal Data </a><a class="npc nosettings" href="#source-information-npc" data-i18n="source of information">source of information</a><a class="npc nosettings" href="#statistical-data-npc" data-i18n="statistical data">Statistical Data</a><a class="npc nosettings" href="#applicable-skills-npc" data-i18n="applicable skill sets">Applicable Skill sets</a><a class="npc nosettings" href="#equipment-npc" data-i18n="equipment">equipment</a><a class="npc nosettings" href="#abilities-npc" data-i18n="abilities">abilities</a><a class="npc nosettings" href="#remarks-npc" data-i18n="remarks">Remarks</a><a class="navsettings" href="#general-settings" data-i18n="general">general 			</a><a class="navsettings" href="#modifier-settings" data-i18n="modifier">modifier 			</a><a class="navsettings" href="#automations-settings" data-i18n="automations">automations 			</a><a class="navsettings" href="#experimental-settings" data-i18n="experimental">experimental 			</a>
     </div>
     <div class="grid empty"></div>
   </div>
@@ -203,6 +203,7 @@ each val,key in defensiveQualities
           <div class="radio">
             <label class="settingradio">Sheet Type</label><span>
               <input name="attr_sheet_type" type="radio" value="pc" checked="checked"/><span data-i18n-value="agent">agent</span></span><span>
+              <input name="attr_sheet_type" type="radio" value="covenant"/><span data-i18n-value="covenant">Covenant</span></span><span>
               <input name="attr_sheet_type" type="radio" value="npc"/><span data-i18n-value="npc">NPC</span></span><span>
               <input name="attr_sheet_type" type="radio" value="handler"/><span data-i18n-value="handler">Handler</span></span><span>
                     </span>
@@ -4070,6 +4071,648 @@ each val,key in defensiveQualities
       </div>
       <!--BOTTOM DECORATION-->
       <div class="grid section-bottom-decor"><span class="uppercase" data-i18n="ONI">ONI</span><span class="uppercase" data-i18n="united nations space command">united nations space command</span><span data-i18n="117">117</span><span></span><span class="uppercase" data-i18n="section 3//propin//special access required oni agent documentation sheet">section 3//propin//special access required<br>oni agent documentation sheet <span name="attr_version"></span></span><span data-i18n="012178">012178</span></div>
+    </div>
+    <!-- COVENANT SHEET-->
+    <!-- =============================-->
+    <div class="covenant">
+      <input class="use_global_modifier" type="hidden" name="attr_use_global_modifier"/>
+      <!--PERSONAL DATA-->
+      <div class="grid header-body personal-data border" id="personal-data-covenant">
+        <div class="section-header">
+          <h1 data-i18n="personal data" data-i18n-title="personal data" title="personal data">personal data</h1>
+        </div>
+        <div class="section-body">
+          <div class="grid section border-bottom">
+            <h2 class="aligned-left" data-i18n="name:" data-i18n-title="name:" title="name:">name:</h2>
+            <label data-i18n-title="name:" title="name:">
+              <input data-i18n-placeholder="covenant name" name="attr_character_name" placeholder="Covenant Name" title="@{name}" type="text" value=""/>
+            </label>
+            <div class="vert-line"></div>
+            <h2 class="aligned-left" data-i18n="designation:" data-i18n-title="designation:" title="designation:">designation:</h2>
+            <label data-i18n-title="designation:" title="designation:">
+              <input data-i18n-placeholder="designation" name="attr_covenant_designation" placeholder="Designation" title="@{covenant_designation}" type="text" value=""/>
+            </label>
+            <div class="vert-line"></div>
+          </div>
+          <div class="grid section border-bottom">
+            <h2 class="aligned-left" data-i18n="species:" data-i18n-title="species:" title="species:">species:</h2>
+            <label data-i18n-title="species:" title="species:">
+              <input data-i18n-placeholder="species" name="attr_covenant_species" placeholder="Species" title="@{covenant_species}" type="text" value=""/>
+            </label>
+            <div class="vert-line"></div>
+            <h2 class="aligned-left" data-i18n="rank:" data-i18n-title="rank:" title="rank:">rank:</h2>
+            <label data-i18n-title="rank:" title="rank:">
+              <input data-i18n-placeholder="rank" name="attr_covenant_rank" placeholder="Rank" title="@{covenant_rank}" type="text" value=""/>
+            </label>
+            <div class="vert-line"></div>
+          </div>
+        </div>
+      </div>
+      <!--STATISTICAL DATA-->
+      <div class="grid header-body statistical-data border" id="statistical-data-covenant">
+        <div class="section-header">
+          <h1 data-i18n="statistical data" data-i18n-title="statistical data" title="statistical data">statistical data</h1>
+        </div>
+        <!--STATISTICS-->
+        <div class="grid section-body">
+          <div class="grid section-stats">
+            <h2 class="aligned-left" data-i18n="8. statistics" data-i18n-title="8. statistics" title="8. statistics">8. statistics</h2>
+            <h2 class="center" data-i18n="score" data-i18n-title="score">score</h2>
+            <h2 class="center" data-i18n="×5" data-i18n-title="×5">×5</h2>
+            <h2 class="aligned-left" data-i18n="distinguishing features" data-i18n-title="">distinguishing features</h2>
+          </div>
+          <div class="grid section-stats body">
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_strength_r" value="@{strength_action}"> 
+                <h3 class="aligned-left" data-i18n-title="strength">strength</h3>
+                <div><span class="para" data-i18n="STR" title="STR">STR</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_strength" value="@{strength_action}"> </button>
+              <button class="none" type="action" name="act_strength-action"> </button>
+              <input type="hidden" name="attr_strength_action" value=""/>
+            </div>
+            <label data-i18n-title="strength score" title="strength score">
+              <input min="0" name="attr_strength_score" placeholder="-" title="@{strength_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_strength" title="@{strength}"></span>
+            <label data-i18n-title="strength distinguishing features" title="strength distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_strength_features" placeholder="distinguishing features" title="@{strength_features}" type="text"/>
+            </label>
+            <input name="attr_strength" type="hidden" value="0"/>
+            <input name="attr_strength_hidden" type="hidden" value="0"/>
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_constitution_r" value="@{constitution_action}"> 
+                <h3 class="aligned-left" data-i18n-title="constitution">constitution</h3>
+                <div><span class="para" data-i18n="CON" title="CON">CON</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_constitution" value="@{constitution_action}"> </button>
+              <button class="none" type="action" name="act_constitution-action"> </button>
+              <input type="hidden" name="attr_constitution_action" value=""/>
+            </div>
+            <label data-i18n-title="constitution score" title="constitution score">
+              <input min="0" name="attr_constitution_score" placeholder="-" title="@{constitution_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_constitution" title="@{constitution}"></span>
+            <label data-i18n-title="constitution distinguishing features" title="constitution distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_constitution_features" placeholder="distinguishing features" title="@{constitution_features}" type="text"/>
+            </label>
+            <input name="attr_constitution" type="hidden" value="0"/>
+            <input name="attr_constitution_hidden" type="hidden" value="0"/>
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_dexterity_r" value="@{dexterity_action}"> 
+                <h3 class="aligned-left" data-i18n-title="dexterity">dexterity</h3>
+                <div><span class="para" data-i18n="DEX" title="DEX">DEX</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_dexterity" value="@{dexterity_action}"> </button>
+              <button class="none" type="action" name="act_dexterity-action"> </button>
+              <input type="hidden" name="attr_dexterity_action" value=""/>
+            </div>
+            <label data-i18n-title="dexterity score" title="dexterity score">
+              <input data-i18n-placeholder="-" min="0" name="attr_dexterity_score" placeholder="-" title="@{dexterity_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_dexterity" title="@{dexterity}"></span>
+            <label data-i18n-title="dexterity distinguishing features" title="dexterity distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_dexterity_features" placeholder="distinguishing features" title="@{dexterity_features}" type="text"/>
+            </label>
+            <input name="attr_dexterity" type="hidden" value="0"/>
+            <input name="attr_dexterity_hidden" type="hidden" value="0"/>
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_intelligence_r" value="@{intelligence_action}"> 
+                <h3 class="aligned-left" data-i18n-title="intelligence">intelligence</h3>
+                <div><span class="para" data-i18n="INT" title="INT">INT</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_intelligence" value="@{intelligence_action}"> </button>
+              <button class="none" type="action" name="act_intelligence-action"> </button>
+              <input type="hidden" name="attr_intelligence_action" value=""/>
+            </div>
+            <label data-i18n-title="intelligence score" title="intelligence score">
+              <input data-i18n-placeholder="-" min="0" name="attr_intelligence_score" placeholder="-" title="@{intelligence_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_intelligence" title="@{intelligence}"></span>
+            <label data-i18n-title="intelligence distinguishing features" title="intelligence distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_intelligence_features" placeholder="distinguishing features" title="@{intelligence_features}" type="text"/>
+            </label>
+            <input name="attr_intelligence" type="hidden" value="0"/>
+            <input name="attr_intelligence_hidden" type="hidden" value="0"/>
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_power_r" value="@{power_action}"> 
+                <h3 class="aligned-left" data-i18n-title="power">power</h3>
+                <div><span class="para" data-i18n="POW" title="POW">POW</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_power" value="@{power_action}"> </button>
+              <button class="none" type="action" name="act_power-action"> </button>
+              <input type="hidden" name="attr_power_action" value=""/>
+            </div>
+            <label data-i18n-title="power score" title="power score">
+              <input min="0" name="attr_power_score" placeholder="-" title="@{power_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_power" title="@{power}"></span>
+            <label data-i18n-title="power distinguishing features" title="power distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_power_features" placeholder="distinguishing features" title="@{power_features}" type="text"/>
+            </label>
+            <input name="attr_power" type="hidden" value="0"/>
+            <input name="attr_power_hidden" type="hidden" value="0"/>
+            <div class="buttonwrapper">
+              <button class="roll  inPersonal two" type="action" name="attr_charisma_r" value="@{charisma_action}"> 
+                <h3 class="aligned-left" data-i18n-title="charisma">charisma</h3>
+                <div><span class="para" data-i18n="CHA" title="CHA">CHA</span></div>
+              </button>
+              <button class="none" type="roll" name="roll_charisma" value="@{charisma_action}"> </button>
+              <button class="none" type="action" name="act_charisma-action"> </button>
+              <input type="hidden" name="attr_charisma_action" value=""/>
+            </div>
+            <label data-i18n-title="charisma score" title="charisma score">
+              <input data-i18n-placeholder="-" min="0" name="attr_charisma_score" placeholder="-" title="@{charisma_score}" type="text" value=" "/>
+            </label><span class="center" name="attr_charisma" title="@{charisma}"></span>
+            <label data-i18n-title="charisma distinguishing features" title="charisma distinguishing features">
+              <input data-i18n-placeholder="distinguishing features" name="attr_charisma_features" placeholder="distinguishing features" title="@{charisma_features}" type="text"/>
+            </label>
+            <input name="attr_charisma" type="hidden" value="0"/>
+            <input name="attr_charisma_hidden" type="hidden" value="0"/>
+          </div>
+          <!--DERIVED ATTRIBUTES-->
+          <div class="grid section-derived">
+            <h2 class="aligned-left" data-i18n-title="9. derived attributes">9. derived attributes</h2>
+            <h2 class="center">maximum</h2>
+            <h2 class="center">current</h2>
+          </div>
+          <div class="grid section-derived body">
+            <div class="explainer">
+              <div class="derived-attr nbsp">
+                <h3 class="aligned-left" data-i18n="hit points" data-i18n-title="hit points">hit points</h3><span class="para" data-i18n="HP">HP</span>
+              </div>
+            </div>
+            <span class="center" name="attr_hit_points_max" title="@{hit_points_max}"></span>
+            <label data-i18n-title="hit points current" title="hit points current">
+              <input min="0" name="attr_hit_points" placeholder="-" title="@{hit_points}" type="text" value=" "/>
+            </label>
+            <input name="attr_hit_points_max" type="hidden" value="0"/>
+            <div class="explainer">
+              <div class="derived-attr nbsp">
+                <h3 class="aligned-left" data-i18n="willpower points" data-i18n-title="willpower points">willpower points</h3><span class="para" data-i18n="WP">WP</span>
+              </div>
+            </div>
+            <span class="center" name="attr_willpower_points_max" title="@{willpower_points_max}"></span>
+            <label data-i18n-title="willpower points current" title="willpower points current">
+              <input min="0" name="attr_willpower_points" placeholder="-" title="@{willpower_points}" type="text" value=" "/>
+            </label>
+            <input name="attr_willpower_points_max" type="hidden" value="0"/>
+          </div>
+        </div>
+      </div>
+      <!--PSYCHOLOGICAL DATA-->
+      <div class="grid header-body psychological-data border" id="psychological-data-covenant">
+        <div class="section-header">
+          <h1 data-i18n="psychological data" data-i18n-title="psychological data" title="psychological data">psychological data</h1>
+        </div>
+        <div class="section-body">
+          <div class="grid section border-bottom">
+            <h2 class="margin-left" data-i18n="covenant harmony:" data-i18n-title="covenant harmony:" title="covenant harmony:">covenant harmony:</h2>
+            <label data-i18n-title="covenant harmony:" title="covenant harmony:">
+              <input data-i18n-placeholder="0" name="attr_covenant_harmony" placeholder="0" title="@{covenant_harmony}" type="text" value=""/>
+            </label>
+            <div class="vert-line"></div>
+            <h2 class="margin-left" data-i18n="instability:" data-i18n-title="instability:" title="instability:">instability:</h2>
+            <label data-i18n-title="instability:" title="instability:">
+              <input data-i18n-placeholder="0" name="attr_covenant_instability" placeholder="0" title="@{covenant_instability}" type="text" value=""/>
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--APPLICABLE SKILLS-->
+      <div class="grid header-body applicable-skills border" id="applicable-skills-covenant">
+        <div class="section-header">
+          <h1 data-i18n="applicable skill sets" data-i18n-title="applicable skill sets" title="applicable skill sets">applicable skill sets</h1>
+        </div>
+        <div class="section-body">
+          <div class="skill-container">
+            <div class="section-skill-col">
+              <h3 data-i18n="combat skills" data-i18n-title="combat skills" title="combat skills">combat skills</h3>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="plasma weaponry fail checkbox" title="plasma weaponry fail checkbox">
+                  <input name="attr_plasma_weaponry_fail" title="@{plasma_weaponry_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_plasma_weaponry_r" value="@{plasma_weaponry_action}"> 
+                      <h3 class="aligned-left" data-i18n="plasma weaponry">plasma weaponry</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_plasma_weaponry" value="@{plasma_weaponry_action}"> </button>
+                    <button class="none" type="action" name="act_plasma_weaponry-action"> </button>
+                    <input type="hidden" name="attr_plasma_weaponry_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="plasma weaponry rank">
+                  <input data-i18n-placeholder="0" name="attr_plasma_weaponry" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="energy sword mastery fail checkbox" title="energy sword mastery fail checkbox">
+                  <input name="attr_energy_sword_fail" title="@{energy_sword_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_energy_sword_r" value="@{energy_sword_action}"> 
+                      <h3 class="aligned-left" data-i18n="energy sword mastery">energy sword mastery</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_energy_sword" value="@{energy_sword_action}"> </button>
+                    <button class="none" type="action" name="act_energy_sword-action"> </button>
+                    <input type="hidden" name="attr_energy_sword_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="energy sword mastery rank">
+                  <input data-i18n-placeholder="0" name="attr_energy_sword" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="personal shield operation fail checkbox" title="personal shield operation fail checkbox">
+                  <input name="attr_shield_operation_fail" title="@{shield_operation_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_shield_operation_r" value="@{shield_operation_action}"> 
+                      <h3 class="aligned-left" data-i18n="personal shield operation">personal shield operation</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_shield_operation" value="@{shield_operation_action}"> </button>
+                    <button class="none" type="action" name="act_shield_operation-action"> </button>
+                    <input type="hidden" name="attr_shield_operation_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="personal shield operation rank">
+                  <input data-i18n-placeholder="0" name="attr_shield_operation" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="covenant armor systems fail checkbox" title="covenant armor systems fail checkbox">
+                  <input name="attr_armor_systems_fail" title="@{armor_systems_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_armor_systems_r" value="@{armor_systems_action}"> 
+                      <h3 class="aligned-left" data-i18n="covenant armor systems">covenant armor systems</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_armor_systems" value="@{armor_systems_action}"> </button>
+                    <button class="none" type="action" name="act_armor_systems-action"> </button>
+                    <input type="hidden" name="attr_armor_systems_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="covenant armor systems rank">
+                  <input data-i18n-placeholder="0" name="attr_armor_systems" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+            </div>
+            <div class="section-skill-col">
+              <h3 data-i18n="technical skills" data-i18n-title="technical skills" title="technical skills">technical skills</h3>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="forerunner research fail checkbox" title="forerunner research fail checkbox">
+                  <input name="attr_forerunner_research_fail" title="@{forerunner_research_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_forerunner_research_r" value="@{forerunner_research_action}"> 
+                      <h3 class="aligned-left" data-i18n="forerunner research">forerunner research</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_forerunner_research" value="@{forerunner_research_action}"> </button>
+                    <button class="none" type="action" name="act_forerunner_research-action"> </button>
+                    <input type="hidden" name="attr_forerunner_research_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="forerunner research rank">
+                  <input data-i18n-placeholder="0" name="attr_forerunner_research" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="covenant engineering fail checkbox" title="covenant engineering fail checkbox">
+                  <input name="attr_covenant_engineering_fail" title="@{covenant_engineering_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_covenant_engineering_r" value="@{covenant_engineering_action}"> 
+                      <h3 class="aligned-left" data-i18n="covenant engineering">covenant engineering</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_covenant_engineering" value="@{covenant_engineering_action}"> </button>
+                    <button class="none" type="action" name="act_covenant_engineering-action"> </button>
+                    <input type="hidden" name="attr_covenant_engineering_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="covenant engineering rank">
+                  <input data-i18n-placeholder="0" name="attr_covenant_engineering" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="slipspace technology fail checkbox" title="slipspace technology fail checkbox">
+                  <input name="attr_slipspace_tech_fail" title="@{slipspace_tech_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_slipspace_tech_r" value="@{slipspace_tech_action}"> 
+                      <h3 class="aligned-left" data-i18n="slipspace technology">slipspace technology</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_slipspace_tech" value="@{slipspace_tech_action}"> </button>
+                    <button class="none" type="action" name="act_slipspace_tech-action"> </button>
+                    <input type="hidden" name="attr_slipspace_tech_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="slipspace technology rank">
+                  <input data-i18n-placeholder="0" name="attr_slipspace_tech" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="covenant linguistics fail checkbox" title="covenant linguistics fail checkbox">
+                  <input name="attr_covenant_linguistics_fail" title="@{covenant_linguistics_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_covenant_linguistics_r" value="@{covenant_linguistics_action}"> 
+                      <h3 class="aligned-left" data-i18n="covenant linguistics">covenant linguistics</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_covenant_linguistics" value="@{covenant_linguistics_action}"> </button>
+                    <button class="none" type="action" name="act_covenant_linguistics-action"> </button>
+                    <input type="hidden" name="attr_covenant_linguistics_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="covenant linguistics rank">
+                  <input data-i18n-placeholder="0" name="attr_covenant_linguistics" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+            </div>
+            <div class="section-skill-col">
+              <h3 data-i18n="leadership" data-i18n-title="leadership" title="leadership">leadership</h3>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="fleet command fail checkbox" title="fleet command fail checkbox">
+                  <input name="attr_fleet_command_fail" title="@{fleet_command_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_fleet_command_r" value="@{fleet_command_action}"> 
+                      <h3 class="aligned-left" data-i18n="fleet command">fleet command</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_fleet_command" value="@{fleet_command_action}"> </button>
+                    <button class="none" type="action" name="act_fleet_command-action"> </button>
+                    <input type="hidden" name="attr_fleet_command_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="fleet command rank">
+                  <input data-i18n-placeholder="0" name="attr_fleet_command" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="covenant tactics fail checkbox" title="covenant tactics fail checkbox">
+                  <input name="attr_covenant_tactics_fail" title="@{covenant_tactics_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_covenant_tactics_r" value="@{covenant_tactics_action}"> 
+                      <h3 class="aligned-left" data-i18n="covenant tactics">covenant tactics</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_covenant_tactics" value="@{covenant_tactics_action}"> </button>
+                    <button class="none" type="action" name="act_covenant_tactics-action"> </button>
+                    <input type="hidden" name="attr_covenant_tactics_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="covenant tactics rank">
+                  <input data-i18n-placeholder="0" name="attr_covenant_tactics" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="species coordination fail checkbox" title="species coordination fail checkbox">
+                  <input name="attr_species_coordination_fail" title="@{species_coordination_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_species_coordination_r" value="@{species_coordination_action}"> 
+                      <h3 class="aligned-left" data-i18n="species coordination">species coordination</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_species_coordination" value="@{species_coordination_action}"> </button>
+                    <button class="none" type="action" name="act_species_coordination-action"> </button>
+                    <input type="hidden" name="attr_species_coordination_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="species coordination rank">
+                  <input data-i18n-placeholder="0" name="attr_species_coordination" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+              <div class="section-skill-row">
+                <label class="styled-checkbox center-items" data-i18n-title="stealth camouflage fail checkbox" title="stealth camouflage fail checkbox">
+                  <input name="attr_stealth_camouflage_fail" title="@{stealth_camouflage_fail}" type="checkbox"/>
+                </label>
+                <div class="box">
+                  <div class="buttonwrapper">
+                    <button class="roll normal_div inSkills two" type="action" name="attr_stealth_camouflage_r" value="@{stealth_camouflage_action}"> 
+                      <h3 class="aligned-left" data-i18n="stealth camouflage">stealth camouflage</h3>
+                    </button>
+                    <button class="none" type="roll" name="roll_stealth_camouflage" value="@{stealth_camouflage_action}"> </button>
+                    <button class="none" type="action" name="act_stealth_camouflage-action"> </button>
+                    <input type="hidden" name="attr_stealth_camouflage_action" value=""/>
+                  </div>
+                </div>
+                <label class="rank" data-i18n-title="stealth camouflage rank">
+                  <input data-i18n-placeholder="0" name="attr_stealth_camouflage" placeholder="0" type="text" value=""/>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--INJURIES-->
+      <div class="grid header-body injuries border" id="injuries-covenant">
+        <div class="section-header">
+          <h1 data-i18n="injuries" data-i18n-title="injuries" title="injuries">injuries</h1>
+        </div>
+        <div class="section-body">
+          <div class="repeating-column">
+            <fieldset class="repeating_injuries">
+              <label><span data-i18n="injury">injury</span><input data-i18n-placeholder="injury" name="attr_injury" placeholder="injury" type="text" value=""/></label>
+              <label><span data-i18n="effect">effect</span><input data-i18n-placeholder="effect" name="attr_effect" placeholder="effect" type="text" value=""/></label>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <!--EQUIPMENT-->
+      <div class="grid header-body equipment border" id="equipment-covenant">
+        <div class="section-header">
+          <h1 data-i18n="equipment" data-i18n-title="equipment" title="equipment">equipment</h1>
+        </div>
+        <div class="grid section-body border">
+          <h2 class="aligned-left" data-i18n="15. armor and gear" data-i18n-title="15. armor and gear">15. armor and gear</h2>
+          <div class="border-bottom">
+            <textarea data-i18n-placeholder="armor and gear" name="attr_armor_and_gear" placeholder="armor and gear" title="@{armor_and_gear}"></textarea>
+          </div>
+          <div class="section-directions center border-bottom"><span data-i18n="Covenant armor reduces damage from conventional weapons. Advanced shielding provides additional protection.">Covenant armor reduces damage from conventional weapons. Advanced shielding provides additional protection.</span></div>
+          <div class="grid section-weapons border-bottom">
+            <h2 data-i18n="16. weapons" data-i18n-title="16. weapons" title="16. weapons">16. weapons</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="skill %" data-i18n-title="skill %" title="skill %">skill %</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="base range" data-i18n-title="base range" title="base range">base range</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="damage" data-i18n-title="damage" title="damage">damage</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="armor piercing" data-i18n-title="armor piercing" title="armor piercing">armor piercing</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="lethality %" data-i18n-title="lethality %" title="lethality %">lethality %</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="kill radius" data-i18n-title="kill radius" title="kill radius">kill radius</h2>
+            <div class="vert-line"></div>
+            <h2 data-i18n="ammo" data-i18n-title="ammo" title="ammo">ammo</h2>
+          </div>
+          <div class="repeating-container border-bottom">
+            <fieldset class="repeating_weapons">
+              <input type="hidden" name="attr_initialized" value="0"/>
+              <div class="grid section-weapons border-bottom repeating-section-weapons">
+                <input type="hidden" name="attr_weapons"/>
+                <input name="attr_hasLethality" type="hidden" value="0"/>
+                <input name="attr_hasDamage" type="hidden" value="0"/>
+                <input name="attr_hasammo" type="hidden" value="0"/>
+                <button class="none two" type="roll" name="roll_damage" value="@{damage_action}">							</button>
+                <button class="none" type="action" name="act_damage-action"> </button>
+                <input type="hidden" name="attr_damage_action" value=""/>
+                <button class="none two" type="roll" name="roll_damage_critical" value="@{damage_critical_action}">							</button>
+                <button class="none" type="action" name="act_damage_critical-action"> </button>
+                <input type="hidden" name="attr_damage_critical_action" value=""/>
+                <button class="none two" type="roll" name="roll_lethality_percent" value="@{lethality_percent_action}">							</button>
+                <button class="none" type="action" name="act_lethality_percent-action"> </button>
+                <input type="hidden" name="attr_lethality_percent_action" value=""/>
+                <button class="none two" type="roll" name="roll_lethality_percent_critical" value="@{lethality_percent_critical_action}">							</button>
+                <button class="none" type="action" name="act_lethality_percent_critical-action"> </button>
+                <input type="hidden" name="attr_lethality_percent_critical_action" value=""/>
+                <button class="none two" type="roll" name="roll_double_barrel" value="@{double_barrel_action}">							</button>
+                <button class="none" type="action" name="act_double_barrel-action"> </button>
+                <input type="hidden" name="attr_double_barrel_action" value=""/>
+                <button class="none two" type="roll" name="roll_double_barrel_critical" value="@{double_barrel_critical_action}">							</button>
+                <button class="none" type="action" name="act_double_barrel_critical-action"> </button>
+                <input type="hidden" name="attr_double_barrel_critical_action" value=""/>
+                <button class="none two" type="roll" name="roll_selective_fire" value="@{selective_fire_action}">							</button>
+                <button class="none" type="action" name="act_selective_fire-action"> </button>
+                <input type="hidden" name="attr_selective_fire_action" value=""/>
+                <button class="none two" type="roll" name="roll_selective_fire_critical" value="@{selective_fire_critical_action}">							</button>
+                <button class="none" type="action" name="act_selective_fire_critical-action"> </button>
+                <input type="hidden" name="attr_selective_fire_critical_action" value=""/>
+                <div class="form-normal-group">
+                  <label class="weapon_button">
+                    <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                      <input style="display:none" type="checkbox" name="attr_hasAdvancedWeapons" value="active"/>
+                      <input style="width:100%; padding: 0px 0px; margin: 0px 0;box-sizing: border-box;" type="text" name="attr_name" value="weapon" title="@{repeating_weapons_${x}_weapons}"/></span><span class="unedit_text">
+                      <div class="buttonwrapper">
+                        <button class="repeating_roll pressable special_div one" type="action" name="attr_weapons_r" value="@{weapons_action}"> 
+                          <h3 class="aligned-left"><span name="attr_name"></span></h3>
+                        </button>
+                        <button class="none pressable special_div one" type="roll" name="roll_weapons" value="@{weapons_action}">	</button>
+                        <button class="none" type="action" name="act_weapons-action"> </button>
+                        <input type="hidden" name="attr_weapons_action" value=""/>
+                      </div></span>
+                  </label>
+                  <label class="switch-edit">
+                    <input type="checkbox" name="attr_test" value="editable"/><span class="vslider"></span>
+                  </label>
+                </div>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="skill % input" title="skill % input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input data-i18n-placeholder="skill %" name="attr_skill_percent" list="weaponskills" placeholder="skill %" title="@{repeating_weapons_${x}_skill_percent}" type="text" value=""/></span><span class="unedit_text"><span name="attr_skill_span"></span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="base range input" title="base range input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input data-i18n-placeholder="base range" name="attr_base_range" placeholder="base range" title="@{repeating_weapons_${x}_base_range}" type="text" value=""/></span><span class="unedit_text"><span name="attr_base_range"></span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="damage input" title="damage input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input class="blast" name="attr_blast_radius" type="hidden"/><span class="wblast"><span>- </span></span><span class="noblast">
+                      <input class="shotgun" name="attr_hasDoubleBarrel" type="hidden"/><span class="noshotgun">
+                        <input data-i18n-placeholder="damage" name="attr_damage" placeholder="damage" title="@{repeating_weapons_${x}_damage}" type="text" value=""/></span><span class="wshotgun">
+                        <div class="slashpart">
+                          <input data-i18n-placeholder="damage" name="attr_damage" placeholder="damage" title="@{repeating_weapons_${x}_damage}" type="text" value=""/><span>/</span>
+                          <input data-i18n-placeholder="damage" name="attr_double_barrel" placeholder="damage" title="@{repeating_weapons_${x}_double_barrel}" type="text" value=""/>
+                        </div></span></span></span><span class="unedit_text">
+                    <input class="blast" name="attr_blast_radius" type="hidden"/><span class="wblast"><span>- </span></span><span class="noblast">
+                      <input class="shotgun" name="attr_hasDoubleBarrel" type="hidden"/><span class="noshotgun"><span data-i18n-placeholder="damage" name="attr_damage"></span></span><span class="wshotgun">
+                        <div class="slashpart"><span data-i18n-placeholder="damage" name="attr_damage"></span><span>/</span><span data-i18n-placeholder="damage" name="attr_double_barrel"></span></div></span></span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="armor piercing input" title="armor piercing input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input data-i18n-placeholder="armor piercing" name="attr_armor_piercing" placeholder="armor piercing" title="@{repeating_weapons_${x}_armor_piercing}" type="text" value=""/></span><span class="unedit_text"><span name="attr_armor_piercing"></span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="lethality % input" title="lethality % input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input class="shotgun" name="attr_shotgun" type="hidden"/>
+                    <input class="noshotgun" data-i18n-placeholder="lethality %" name="attr_lethality_percent" placeholder="lethality %" title="@{repeating_weapons_${x}_lethality_percent}" type="number" value=""/><span class="wshotgun">-</span></span><span class="unedit_text">
+                    <input class="shotgun" name="attr_shotgun" type="hidden"/><span class="noshotgun" data-i18n-placeholder="lethality %" name="attr_lethality_percent"></span><span class="wshotgun">-</span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="kill radius input" title="kill radius input">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text">
+                    <input data-i18n-placeholder="kill radius" name="attr_kill_radius" placeholder="kill radius" title="@{repeating_weapons_${x}_kill_radius}" type="text" value=""/></span><span class="unedit_text"><span name="attr_kill_radius"></span></span>
+                </label>
+                <div class="vert-line"></div>
+                <label class="weapon_label" data-i18n-title="ammo input" title="ammo input" style="display: grid; position:relative;">
+                  <input class="edit_test" type="hidden" name="attr_test"/><span class="edit_text allowpopup">
+                    <input data-i18n-placeholder="ammo" name="attr_ammo_total" placeholder="ammo" title="@{repeating_weapons_${x}_ammo_max}" type="text" value="0"/>
+                    <input type="hidden" name="attr_hasAdvancedWeapons" value=""/>
+                    <div class="othergrid advancedinfo hasAdvancedWeapons">
+                      <input class="advanced" type="checkbox"/><span></span>
+                      <div class="modifiers"> 
+                        <h2 class="title" data-i18n="advanced features">advanced features</h2>
+                        <div class="item-shotgun">
+                          <input class="fix-check" name="attr_shotgun" type="checkbox" value="active"/><span><span data-i18n="shotgun">shotgun</span> <span class="para">+20%</span></span><span class="double_damage">
+                            <input class="fix-check" name="attr_hasDoubleBarrel" type="checkbox" value="active"/><span data-i18n="double damage">double damage</span></span>
+                        </div>
+                        <div class="item-check">
+                          <input class="fix-check" name="attr_blast_radius" type="checkbox" value="active"/><span><span data-i18n="blast radius">blast radius</span> <span class="para">+20%</span></span>
+                        </div>
+                        <div class="item-acc"> 
+                          <input class="fix-check" name="attr_hasAccessories" type="checkbox" value="active"/><span data-i18n="accessories">accessories</span>
+                          <input data-i18n-placeholder="Holographic sight Standard" type="text" name="attr_accessory_name" title="@{repeating_weapons_${x}_accessory_name}" placeholder="Holographic sight" value=""/><span style="display:inline;justify-self:end;"><span data-i18n="modifier">modifier</span>
+                            <input class="number" type="text" list="common_modifiers" name="attr_accessory_modifier" title="@{repeating_weapons_${x}_accessory_modifier}" value="0" maxlength="2" size="3" style="width: 3rem;"/><span class="perc">%</span></span>
+                        </div>
+                        <div class="item-sel">
+                          <input class="fix-check" name="attr_selfire" type="checkbox" value="active"/><span data-i18n-value="selective fire">selective fire</span>
+                          <input type="hidden" name="attr_selfire_type" value="short burst"/>
+                          <select class="small-select" name_="attr_selfireType">
+                            <option value="short burst"><span class="selfire"> <span class="first" data-i18n="short burst">short burst</span> <span>(</span><span data-i18n="3 ammo">3 ammo</span><span>)</span></span></option>
+                            <option value="long burst"><span class="selfire"> <span class="first" data-i18n="long burst"> long burst</span> <span>(</span><span class="para" data-i18n="5 ammo">5 ammo</span><span>)</span></span></option>
+                            <option value="short spray"><span class="selfire"> <span class="first" data-i18n="short spray">short spray</span> <span>(</span><span class="para" data-i18n="10 ammo">10 ammo</span><span>)</span></span></option>
+                            <option value="long spray"> long spray<span class="selfire"> <span class="first" data-i18n="long spray"> long spray</span> <span>(</span><span class="para" data-i18n="20 ammo">20 ammo</span><span>)</span></span></option>
+                          </select><span style="display:inline;justify-self:end;"><span data-i18n="lethality">lethality</span>
+                            <input class="number" type="text" name="attr_selfire_lethality_percent" title="@{repeating_weapons_${x}_selfire_lethality_percent}" value="10" maxlength="2" size="3" style="width: 3rem;"/><span>%</span></span>
+                        </div>
+                      </div>
+                    </div></span><span class="unedit_text">
+                    <input class="hasammo" type="hidden" name="attr_hasammo" value="0"/><span class="wammo">
+                      <div class="slashpart">
+                        <input data-i18n-placeholder="ammo" name="attr_ammo" placeholder="ammo" title="@{repeating_weapons_${x}_ammo}" value="0" style="width: 3rem;"/><span>/</span><span data-i18n-placeholder="ammo" name="attr_ammo_total" placeholder="ammo" title="@{repeating_weapons_${x}_ammo_total}"></span>
+                      </div></span><span class="noammo"><span>-</span></span></span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+      <!--REMARKS-->
+      <div class="grid header-body remarks border" id="remarks-covenant">
+        <div class="section-header">
+          <h1 data-i18n="remarks" data-i18n-title="remarks" title="remarks">remarks</h1>
+        </div>
+        <div class="section-body">
+          <textarea data-i18n-placeholder="notes" name="attr_notes" placeholder="Notes" title="@{notes}"></textarea>
+        </div>
+      </div>
+      <!--COVENANT AUTHORITY-->
+      <div class="grid authorizing-officer border">
+        <div class="section">
+          <h2 class="margin-left" data-i18n="covenant military commander" data-i18n-title="covenant military commander" title="covenant military commander">covenant military commander</h2>
+          <label data-i18n-title="covenant military commander" title="covenant military commander">
+            <input data-i18n-placeholder="covenant military commander" name="attr_covenant_commander" placeholder="Covenant Military Commander" title="covenant military commander" type="text" value=""/>
+          </label>
+        </div>
+        <div class="vert-line"></div>
+        <div class="section">
+          <h2 class="margin-left" data-i18n="covenant mark" data-i18n-title="covenant mark" title="covenant mark">covenant mark</h2>
+          <label data-i18n-title="covenant mark" title="covenant mark">
+            <input data-i18n-placeholder="covenant mark" name="attr_covenant_mark" placeholder="Covenant Mark" title="covenant mark" type="text" value=""/>
+          </label>
+        </div>
+      </div>
+      <!--BOTTOM DECORATION-->
+      <div class="grid section-bottom-decor"><span class="uppercase" data-i18n="COVENANT">COVENANT</span><span class="uppercase" data-i18n="unified coalition form">unified coalition form</span><span data-i18n="001">001</span><span></span><span class="uppercase" data-i18n="covenant alien species documentation">covenant alien species documentation <span name="attr_version"></span></span><span data-i18n="999999">999999</span></div>
     </div>
     <div class="handler">
       <div class="grid_handler agent-data border" id="applicable-skills-handler">

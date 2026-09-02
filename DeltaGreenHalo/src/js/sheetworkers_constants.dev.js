@@ -12,6 +12,7 @@ var arrays = {
   _toggles: ['settings'],
   _sanity_loss: ['sanity_loss_success', 'sanity_loss_failure'],
   _skills: ['accounting', 'alertness', 'anthropology', 'archeology', 'art_1', 'art_2', 'artillery', 'athletics', 'bureaucracy', 'computer_science', 'craft_1', 'craft_2', 'criminology', 'demolitions', 'disguise', 'dodge', 'drive', 'firearms', 'first_aid', 'forensics', 'heavy_machinery', 'heavy_weapons', 'history', 'humint', 'law', 'medicine', 'melee_weapons', 'military_science_1', 'military_science_2', 'navigate', 'occult', 'persuade', 'pharmacy', 'pilot_1', 'pilot_2', 'psychotherapy', 'ride', 'science_1', 'science_2', 'search', 'sigint', 'stealth', 'surgery', 'survival', 'swim', 'unarmed_combat'],
+  _covenant_skills: ['plasma_weaponry', 'energy_sword', 'shield_operation', 'armor_systems', 'forerunner_research', 'covenant_engineering', 'slipspace_tech', 'covenant_linguistics', 'fleet_command', 'covenant_tactics', 'species_coordination', 'stealth_camouflage'],
   _colored_derivative: ['willpower', 'hit'],
   _derived_rolls: ['sanity_points', 'luck'],
   _disorder_related: ['sanity_points', 'breaking_point'],
@@ -126,7 +127,7 @@ var _ritual_damages = ['attack', 'heal', 'power'];
 var _type_damages = ['damage', 'lethality_percent'];
 var _ritual_losses = ['pay_cost', 'force_connection', 'accept_failure'];
 
-var _allrolls = arrays['_derived_rolls'].concat(arrays["_stats"], arrays["_skills"], ['unnatural', 'sanity_loss']);
+var _allrolls = arrays['_derived_rolls'].concat(arrays["_stats"], arrays["_skills"], arrays["_covenant_skills"], ['unnatural', 'sanity_loss']);
 
 var RitualCosts = ['sanity_loss_success', 'sanity_loss_failure', 'willpower_points_cost', 'power_score_cost', 'hit_points_cost', 'strength_score_cost', 'constitution_score_cost', 'dexterity_score_cost', 'intelligence_score_cost', 'charisma_score_cost'];
 var CurrentValues = ['sanity_points', 'willpower_points', 'power_score', 'hit_points', 'strength_score', 'constitution_score', 'dexterity_score', 'intelligence_score', 'charisma_score'];

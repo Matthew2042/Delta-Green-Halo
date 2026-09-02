@@ -12,6 +12,7 @@ const arrays = {
 		_toggles: ['settings'],
 		_sanity_loss: ['sanity_loss_success', 'sanity_loss_failure'],
 		_skills:['accounting', 'alertness', 'anthropology', 'archeology', 'art_1', 'art_2', 'artillery', 'athletics', 'bureaucracy', 'computer_science', 'craft_1', 'craft_2', 'criminology', 'demolitions', 'disguise', 'dodge', 'drive', 'firearms','first_aid', 'forensics', 'heavy_machinery', 'heavy_weapons', 'history', 'humint', 'law', 'medicine', 'melee_weapons', 'military_science_1', 'military_science_2', 'navigate', 'occult', 'persuade', 'pharmacy', 'pilot_1','pilot_2', 'psychotherapy','ride', 'science_1','science_2', 'search' , 'sigint' , 'stealth' , 'surgery' , 'survival', 'swim', 'unarmed_combat'],
+		_covenant_skills: ['plasma_weaponry', 'energy_sword', 'shield_operation', 'armor_systems', 'forerunner_research', 'covenant_engineering', 'slipspace_tech', 'covenant_linguistics', 'fleet_command', 'covenant_tactics', 'species_coordination', 'stealth_camouflage'],
 		_colored_derivative:['willpower','hit'],
 		_derived_rolls:['sanity_points','luck'],
 		_disorder_related:['sanity_points','breaking_point'],
@@ -133,7 +134,7 @@ const _alldamages=['damage','damage_critical','double_barrel','double_barrel_cri
 const _ritual_damages=['attack','heal','power'];
 const _type_damages=['damage','lethality_percent'];
 const _ritual_losses=['pay_cost','force_connection','accept_failure'];
-const _allrolls=arrays['_derived_rolls'].concat(arrays[`_stats`],arrays[`_skills`],['unnatural','sanity_loss']);
+const _allrolls=arrays['_derived_rolls'].concat(arrays[`_stats`],arrays[`_skills`],arrays[`_covenant_skills`],['unnatural','sanity_loss']);
 
 const RitualCosts   = ['sanity_loss_success','sanity_loss_failure',
     'willpower_points_cost','power_score_cost','hit_points_cost',

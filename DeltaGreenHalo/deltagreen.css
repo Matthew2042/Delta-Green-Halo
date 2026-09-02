@@ -1440,8 +1440,17 @@ input.type[value=pc] ~ div.pc {
   display: grid;
 }
 
+input.type[value=covenant] ~ div.covenant {
+  display: grid;
+}
+
 input.type[value=handler] ~ div.handler {
   display: grid;
+}
+
+/* Hide all sheets by default */
+div.pc, div.npc, div.covenant, div.handler {
+  display: none;
 }
 
 /*
@@ -1687,6 +1696,12 @@ div.tabs .navmenu input.type[value=npc] ~ a.pc, div.tabs .navmenu a.npc, div.tab
   display: none;
 }
 div.tabs .navmenu input.type[value=npc] ~ a.npc, div.tabs .navmenu a.pc, div.tabs .navmenu1 input.type[value=npc] ~ a.npc, div.tabs .navmenu1 a.pc {
+  display: block;
+}
+div.tabs .navmenu input.type[value=covenant] ~ a.pc, div.tabs .navmenu input.type[value=covenant] ~ a.npc, div.tabs .navmenu a.covenant, div.tabs .navmenu1 input.type[value=covenant] ~ a.pc, div.tabs .navmenu1 input.type[value=covenant] ~ a.npc, div.tabs .navmenu1 a.covenant {
+  display: none;
+}
+div.tabs .navmenu input.type[value=covenant] ~ a.covenant, div.tabs .navmenu1 input.type[value=covenant] ~ a.covenant {
   display: block;
 }
 div.tabs .navmenu input.onsettings[value=settings] ~ a.nosettings, div.tabs .navmenu a.navsettings, div.tabs .navmenu1 input.onsettings[value=settings] ~ a.nosettings, div.tabs .navmenu1 a.navsettings {
@@ -2230,14 +2245,14 @@ input[type=radio].zero_color:checked + input.vitality-colored {
   font-weight: bold;
 }
 
-div.npc, div.handler, div.pc {
+div.npc, div.handler, div.pc, div.covenant {
   /* EQUIPMENT
   ======================= */
 }
-div.npc input[type=text], div.npc input[type=number], div.handler input[type=text], div.handler input[type=number], div.pc input[type=text], div.pc input[type=number] {
+div.npc input[type=text], div.npc input[type=number], div.handler input[type=text], div.handler input[type=number], div.pc input[type=text], div.pc input[type=number], div.covenant input[type=text], div.covenant input[type=number] {
   width: 100% !important;
 }
-div.npc div.equipment, div.handler div.equipment, div.pc div.equipment {
+div.npc div.equipment, div.handler div.equipment, div.pc div.equipment, div.covenant div.equipment {
   grid-column: 1/3;
 }
 div.npc div.equipment .ritualsanloss, div.handler div.equipment .ritualsanloss, div.pc div.equipment .ritualsanloss {
@@ -3578,6 +3593,635 @@ span.switch-b, input.switchblock:checked ~ span.switch-a {
   row-gap: 0.5em;
   padding: 0em 0;
   grid-template-columns: 3em;
+}
+
+/* COVENANT SHEET STYLING
+========================================== */
+div.covenant {
+  grid-column-gap: 0.2rem;
+  grid-row-gap: 0.2rem;
+  grid-template-columns: 1fr 1fr;
+}
+div.covenant h1 {
+  color: whitesmoke;
+  font-size: 1rem;
+  text-align: center;
+  transform: rotate(180deg);
+}
+div.covenant div.section-header {
+  background-color: #7B3FF2;
+  grid-area: 1/1/1/1;
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  height: 100%;
+}
+div.covenant div.personal-data {
+  grid-column: 1/3;
+}
+div.covenant div.personal-data div.section {
+  grid-template-rows: min-content;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) {
+  grid-row: 1;
+}
+div.covenant div.personal-data div.section:nth-of-type(2) {
+  grid-row: 1;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) {
+  grid-row: 1;
+}
+div.covenant div.personal-data div.section:nth-of-type(1), div.covenant div.personal-data div.section:nth-of-type(2) {
+  grid-template-columns: 1fr 0.155rem 1fr;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) h2:nth-of-type(1), div.covenant div.personal-data div.section:nth-of-type(2) h2:nth-of-type(1) {
+  grid-area: 1/1/1/3;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) label:nth-of-type(1), div.covenant div.personal-data div.section:nth-of-type(2) label:nth-of-type(1) {
+  grid-area: 2/1/2/3;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) div.vert-line, div.covenant div.personal-data div.section:nth-of-type(2) div.vert-line {
+  grid-area: 1/2/3/2;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) h2:nth-of-type(2), div.covenant div.personal-data div.section:nth-of-type(2) h2:nth-of-type(2) {
+  grid-area: 1/3/1/5;
+}
+div.covenant div.personal-data div.section:nth-of-type(1) label:nth-of-type(2), div.covenant div.personal-data div.section:nth-of-type(2) label:nth-of-type(2) {
+  grid-area: 2/3/2/5;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) {
+  grid-template-columns: 1fr 0.155rem 1fr 0.155rem 3fr;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) h2:nth-of-type(1) {
+  grid-area: 1/1/1/2;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) label:nth-of-type(1) {
+  grid-area: 2/1/2/2;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) div.vert-line:nth-of-type(1) {
+  grid-area: 1/2/3/2;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) h2:nth-of-type(2) {
+  grid-area: 1/3/1/5;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) label:nth-of-type(2) {
+  grid-area: 2/3/2/5;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) div.vert-line:nth-of-type(2) {
+  grid-area: 1/4/3/4;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) h2:nth-of-type(3) {
+  grid-area: 1/5/1/5;
+}
+div.covenant div.personal-data div.section:nth-of-type(3) label:nth-of-type(3) {
+  grid-area: 2/5/2/5;
+}
+div.covenant div.personal-data input[type=text] {
+  text-align: left;
+}
+div.covenant div.statistical-data {
+  grid-area: 2/1/2/1;
+}
+div.covenant div.statistical-data div.section-body {
+  grid-template-rows: min-content;
+}
+div.covenant div.statistical-data button, div.covenant div.statistical-data .derived-attr {
+  align-items: center;
+}
+div.covenant div.statistical-data button span, div.covenant div.statistical-data .derived-attr span {
+  font-size: 0.8rem;
+}
+div.covenant div.statistical-data div.derived-attr {
+  font-size: 1rem;
+  display: flex;
+}
+div.covenant div.statistical-data h3 {
+  display: inline;
+  margin-right: 2%;
+  text-transform: capitalize;
+}
+div.covenant div.statistical-data div.section-stats {
+  grid-template-columns: 1fr 3rem 3rem 1fr;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+div.covenant div.statistical-data div.section-stats > * {
+  background-clip: padding-box;
+  border-left: 0.0775rem solid black;
+  border-right: 0.0775rem solid black;
+  border-bottom: 0.155rem solid black;
+}
+div.covenant div.statistical-data div.section-stats * {
+  height: 100%;
+}
+div.covenant div.statistical-data div.section-stats.body {
+  grid-template-rows: 3.5rem;
+}
+div.covenant div.statistical-data div.section-stats button {
+  text-align: left;
+}
+div.covenant div.statistical-data div.section-stats div.horz-line {
+  grid-column: 1/8;
+}
+div.covenant div.statistical-data div.section-stats span.center {
+  background-color: #404040;
+  color: #f5f5f5;
+  padding-top: 25%;
+}
+div.covenant div.statistical-data div.section-derived {
+  grid-template-columns: 17rem 1fr 1fr;
+}
+div.covenant div.statistical-data div.section-derived.body {
+  grid-template-rows: 3.5rem;
+}
+div.covenant div.statistical-data div.section-derived > * {
+  background-clip: padding-box;
+  border-left: 0.0775rem solid black;
+  border-right: 0.0775rem solid black;
+  border-bottom: 0.155rem solid black;
+}
+div.covenant div.statistical-data div.section-derived .buttonwrapper {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+div.covenant div.statistical-data div.section-derived .buttonwrapper button {
+  align-self: center !important;
+  margin: 0;
+  height: 80% !important;
+}
+div.covenant div.statistical-data div.section-derived .explainer {
+  display: grid;
+  grid-template-columns: 1fr 2rem;
+}
+div.covenant div.statistical-data div.section-derived button {
+  text-align: left;
+}
+div.covenant div.statistical-data div.section-derived div.horz-line {
+  grid-column: 1/6;
+}
+div.covenant div.statistical-data div.section-derived input[name=attr_sanity_points_max] {
+  padding-left: 4%;
+}
+div.covenant div.statistical-data div.section-derived span {
+  padding: 4%;
+}
+div.covenant div.statistical-data div.section-derived span.center {
+  background-color: #404040;
+  color: #f5f5f5;
+}
+div.covenant div.statistical-data div.section-physical {
+  grid-template-rows: min-content;
+}
+div.covenant div.statistical-data div.section-physical textarea {
+  min-height: 5rem;
+  height: 100%;
+}
+div.covenant div.psychological-data {
+  grid-area: 2/2/2/2;
+}
+div.covenant div.psychological-data div.section-body {
+  grid-template-rows: min-content;
+}
+div.covenant div.psychological-data textarea {
+  min-height: 11.5rem;
+}
+div.covenant div.psychological-data .section-bond-notes {
+  display: grid;
+  grid-template-rows: min-content;
+  height: min-content;
+  align-items: center;
+}
+div.covenant div.psychological-data div.section-bonds input[type=text] {
+  text-align: center;
+}
+div.covenant div.psychological-data div.section-bonds div.max-height {
+  max-height: 1.8rem;
+}
+div.covenant div.psychological-data div.section-bonds div.section {
+  grid-template-columns: 1.5fr 0.155rem 1fr;
+}
+div.covenant div.psychological-data div.section-bonds div.repeating-container {
+  height: 14.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+div.covenant div.applicable-skills {
+  grid-column: 1/3;
+}
+div.covenant div.applicable-skills div.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+  padding: 1em;
+}
+div.covenant div.applicable-skills div.section-skill-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row {
+  display: grid;
+  grid-template-columns: 1.5em 1fr 3em;
+  gap: 0.5em;
+  align-items: center;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row label.styled-checkbox {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row label.styled-checkbox input {
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row .box {
+  display: grid;
+  align-items: center;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row .box .buttonwrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row .box button.roll {
+  background: linear-gradient(to bottom right, #7B3FF2, #a374d4);
+  color: #f5f5f5;
+  border: 1px solid #555;
+  padding: 0.35em 0.5em;
+  margin: 0;
+  height: auto;
+  min-height: 2.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 0.25em;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row .box button.roll h3 {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row label.rank {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  color: #f5f5f5;
+  font-size: 0.85em;
+}
+div.covenant div.applicable-skills div.section-skill-col .section-skill-row label.rank input {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  color: #f5f5f5;
+  padding: 0.25em;
+  text-align: center;
+  font-size: 0.8em;
+  width: 3em;
+}
+div.covenant div.applicable-skills div.section-skill-col h3 {
+  color: #7B3FF2;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 0 0.5em 0;
+  border-bottom: 1px solid #7B3FF2;
+  padding-bottom: 0.25em;
+}
+div.covenant div.applicable-skills div.section-skill-col > label {
+  display: none;
+}
+div.covenant div.applicable-skills div.section-skill-col > label span {
+  text-align: left;
+}
+div.covenant div.applicable-skills div.section-skill-col > label input {
+  display: none;
+}
+div.covenant div.applicable-skills div.section-directions {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1.5em;
+  align-items: center;
+}
+div.covenant div.applicable-skills div.section-directions .subgrid {
+  justify-self: start;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3em;
+  align-items: center;
+}
+div.covenant div.applicable-skills div.section-directions .subgrid span {
+  text-align: left;
+  padding-left: 0.3em;
+}
+div.covenant div.applicable-skills div.section-directions .subgrid button {
+  width: 2em;
+  justify-self: start;
+}
+div.covenant div.applicable-skills div.section-directions .subgrid button .lvlup {
+  width: 100%;
+  height: 100%;
+  font-family: "pictos";
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+div.covenant div.applicable-skills div.section-directions .othergrid {
+  justify-self: end;
+}
+div.covenant div.equipment .equipment-subsection {
+  padding: 0.5em 0;
+  color: #f5f5f5;
+}
+div.covenant div.equipment .equipment-subsection h3 {
+  color: #7B3FF2;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em 0 0.5em 0;
+}
+div.covenant div.equipment .equipment-subsection .repeating-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+div.covenant div.equipment fieldset {
+  border: 1px solid #555;
+  padding: 0.5em;
+  background-color: #0a0a0a;
+  border-radius: 3px;
+}
+div.covenant div.equipment fieldset label {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.25em;
+  color: #f5f5f5;
+  font-size: 0.85em;
+}
+div.covenant div.equipment fieldset label span {
+  text-align: left;
+  font-weight: bold;
+  color: #aaa;
+}
+div.covenant div.equipment fieldset label input {
+  background-color: #1a1a1a;
+  border: 1px solid #555;
+  color: #f5f5f5;
+  padding: 0.25em;
+}
+div.covenant div.injuries {
+  grid-column: 1/3;
+}
+div.covenant div.injuries h1 {
+  grid-row: 1;
+}
+div.covenant div.injuries label {
+  display: inline;
+  color: #f5f5f5;
+}
+div.covenant div.injuries div.border-bottom {
+  grid-row: 2;
+}
+div.covenant div.remarks {
+  grid-column: 1/3;
+  color: #f5f5f5;
+}
+div.covenant div.remarks div.section-body {
+  grid-template-columns: 1fr 0.155em 1fr;
+}
+div.covenant div.remarks div.section-body textarea {
+  min-height: 83%;
+  margin-bottom: 2%;
+}
+div.covenant div.remarks div.section-body div.section-special-training {
+  grid-template-columns: 1fr 1fr;
+  border-left: 0.155rem solid black;
+  border-right: 0.155rem solid black;
+}
+div.covenant div.remarks div.section-body div.section-special-training > * {
+  background-clip: padding-box;
+  border-left: 0.0775rem solid black;
+  border-right: 0.0775rem solid black;
+  border-bottom: 0.155rem solid black;
+}
+div.covenant div.remarks div.section-body div.section-special-training .box {
+  display: grid;
+  align-items: center;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  align-content: center;
+  grid-template-columns: 1fr;
+  border-right: 0.155rem solid black;
+}
+div.covenant div.remarks div.section-body div.section-special-training input[type=text][name=attr_special_training] {
+  text-align: left;
+}
+div.covenant div.remarks div.section-body div.section-special-training input[type=text][name=attr_skill_or_stat_used] {
+  text-align: center;
+}
+div.covenant div.remarks div.section-body div.repeating-container {
+  width: 100%;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training.body, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons.body {
+  grid-template-rows: 4rem;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training label.special_label, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons label.special_label {
+  width: 100%;
+  font-size: inherit;
+  font-size: inherit;
+  color: #f5f5f5;
+  font-weight: bold;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training label.special_label .unedit_text, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons label.special_label .unedit_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training .buttonwrapper button, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons .buttonwrapper button {
+  height: 100%;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training .buttonwrapper button, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons .buttonwrapper button {
+  display: inline-grid;
+  text-align: left;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training .buttonwrapper button div h3, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons .buttonwrapper button div h3 {
+  display: inline;
+  margin-right: 5%;
+  padding-left: 2%;
+}
+div.covenant div.remarks div.section-body div.repeating-container .section-special-training .buttonwrapper button div span, div.covenant div.remarks div.section-body div.repeating-container .repeating-section-weapons .buttonwrapper button div span {
+  font-size: inherit;
+  text-align: inherit;
+}
+div.covenant div.remarks div.section-directions {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 4em 2em;
+}
+div.covenant div.remarks div.section-directions button {
+  width: 50%;
+}
+div.covenant div.remarks div.section-directions button .lvlup {
+  width: 100%;
+  height: 100%;
+  font-family: "pictos";
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+div.covenant div.authorizing-officer {
+  grid-column: 1/3;
+  grid-template-columns: 1fr 0.155em 1fr;
+}
+div.covenant div.authorizing-officer h2 {
+  grid-row: 1;
+}
+div.covenant div.authorizing-officer label {
+  grid-row: 2;
+}
+div.covenant div.equipment div.section-weapons {
+  grid-template-columns: 16em 0.155rem 4em 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1fr 0.155rem 7em !important;
+}
+div.covenant div.equipment div.section-weapons h2:nth-of-type(1) {
+  margin-left: 2%;
+}
+div.covenant div.equipment div.section-weapons h2:nth-of-type(1n+2) {
+  text-align: center;
+}
+div.covenant div.equipment div.section-weapons div.repeating-container {
+  width: 100%;
+  grid-column: 1/15;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons {
+  grid-template-rows: 2.8em;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons label.weapon_button {
+  height: 3rem;
+  align-items: center;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons label.weapon_button * {
+  height: 100%;
+  padding-right: 0.1em;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons label.weapon_label {
+  width: 100%;
+  font-size: inherit;
+  color: #f5f5f5;
+  font-weight: bold;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons label.weapon_label .unedit_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+div.covenant div.equipment div.section-weapons div.repeating-container input[type=hidden],
+div.covenant div.equipment div.section-weapons div.repeating-container button.none {
+  display: none !important;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons button[type=roll].none,
+div.covenant div.equipment .section-weapons.repeating-section-weapons button[type=action].none,
+div.covenant div.equipment .section-weapons.repeating-section-weapons input[type=hidden] {
+  display: none !important;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons {
+  display: grid;
+  grid-template-columns: 16em 0.155rem 4em 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1.5fr 0.155rem 1fr 0.155rem 7em;
+  grid-template-rows: 2.8em;
+  width: 100%;
+  gap: 0;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > * {
+  display: grid;
+  align-items: center;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .form-normal-group {
+  grid-column: 1;
+  height: 100%;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .form-normal-group label.weapon_button {
+  height: 3rem;
+  align-items: center;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(2) {
+  grid-column: 2;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(3) {
+  grid-column: 3;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(4) {
+  grid-column: 4;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(5) {
+  grid-column: 5;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(6) {
+  grid-column: 6;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(7) {
+  grid-column: 7;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(8) {
+  grid-column: 8;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(9) {
+  grid-column: 9;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(10) {
+  grid-column: 10;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(11) {
+  grid-column: 11;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(12) {
+  grid-column: 12;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(13) {
+  grid-column: 13;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .vert-line:nth-child(14) {
+  grid-column: 14;
+}
+div.covenant div.equipment .section-weapons.repeating-section-weapons > .weapon_label:nth-child(15) {
+  grid-column: 15;
+}
+div.covenant div.section-bottom-decor {
+  grid-column: 1/3;
+  grid-template-columns: 3em 1fr 4em minmax(8em, 16em) 3fr 5em;
+  margin-top: 2%;
+}
+div.covenant div.section-bottom-decor span {
+  text-transform: uppercase;
+}
+div.covenant div.section-bottom-decor span:nth-child(1), div.covenant div.section-bottom-decor span:nth-child(3), div.covenant div.section-bottom-decor span:nth-last-child(1) {
+  color: #f5f5f5;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+div.covenant div.section-bottom-decor span:nth-of-type(2), div.covenant div.section-bottom-decor span:nth-last-child(2) {
+  color: #4d4d4d;
+  opacity: 0.8;
+  text-align: center;
+}
+div.covenant button[type=roll], div.covenant button[type=action] {
+  background: linear-gradient(to bottom right, #7B3FF2, #a374d4);
+  color: #f5f5f5;
+}
+div.covenant button[type=roll]:focus, div.covenant button[type=roll]:hover, div.covenant button[type=roll]:active, div.covenant button[type=action]:focus, div.covenant button[type=action]:hover, div.covenant button[type=action]:active {
+  background: linear-gradient(to bottom right, #7B3FF2, #5a1f8f);
+  color: whitesmoke !important;
+}
 }
 .sheet-rolltemplate-fancy-damages .sheet-template-container .sheet-template-body .sheet-template-row, .sheet-rolltemplate-fancy-sanloss .sheet-template-container .sheet-template-body .sheet-template-row,
 .sheet-rolltemplate-fancy-bonds .sheet-template-container .sheet-template-body .sheet-template-row, .sheet-rolltemplate-fancy-rolls .sheet-template-container .sheet-template-body .sheet-template-row,
